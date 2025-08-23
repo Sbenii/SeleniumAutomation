@@ -6,7 +6,7 @@ namespace SeleniumAutomation
 {
       class Amazon
       {
-            //Create a refernce for chrome browser
+            //Create a refernce for the browser to be used (chrome browser)
             IWebDriver driver = new ChromeDriver();
 
             static void Main(string[] args)
