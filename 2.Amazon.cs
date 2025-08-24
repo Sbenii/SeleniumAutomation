@@ -15,7 +15,7 @@ namespace SeleniumAutomation
             [SetUp]
             public void Initialize()
             {
-                  //Go to google page
+                  //Go to Amazon page
                   driver.Navigate().GoToUrl("https://www.amazon.com");
             }
             [Test]

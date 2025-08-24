@@ -37,7 +37,7 @@ namespace SeleniumAutomation
             Actualresults = driver.Title;
 
             //Assert
-            Assert.AreEqual(Expectesresults, Actualresults);
+            Assert.AreEqual(Expectesresults,Actualresults);
             //Assert.That(Equals(Expectesresults, Actualresults));
         }
         [TearDown]
