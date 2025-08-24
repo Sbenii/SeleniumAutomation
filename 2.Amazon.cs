@@ -24,11 +24,17 @@ namespace SeleniumAutomation
                   //Make the browser full screen
                   driver.Manage().Window.Maximize();
 
-                  //Web elements
+                  //Web elements and operations
                   IWebElement SignIn = driver.FindElement(By.Id("nav-link-accountList"));
-
-                  //Operations
                   SignIn.Click();
+                  IWebElement FieldInput = driver.FindElement(By.Id("ap_email_login"));
+                  FieldInput.SendKeys("peadsds@uv.te");
+                  IWebElement Continue = driver.FindElement(By.ClassName("a-button-input"));
+                  Continue.Click();
+                  IWebElement Message = driver.FindElement(By.CssSelector("h1.a-size-medium-plus.a-spacing-small"));
+                  String Actualresult = Message.Text;
+                  String Expectedresult = "Looks like you're new to Amazon";
+                  Assert.AreEqual(Actualresult, Expectedresult);
 
             }
  }   
