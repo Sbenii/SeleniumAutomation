@@ -56,7 +56,7 @@ namespace SeleniumAutomation
             IWebElement Signup = driver.FindElement(By.Name("websubmit"));
             Signup.Click();
 
-            //After clicking the signin button it is going to wait for 2 sec to capture the error msg
+            //After clicking the signin button it is going to wait for 4 sec to capture the error msg
             Thread.Sleep(4000);
 
             IWebElement Error = driver.FindElement(By.Id("reg_error_inner"));
