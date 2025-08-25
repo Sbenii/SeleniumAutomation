@@ -32,6 +32,7 @@ namespace SeleniumAutomation
                   IWebElement Continue = driver.FindElement(By.ClassName("a-button-input"));
                   Continue.Click();
                   IWebElement Message = driver.FindElement(By.CssSelector("h1.a-size-medium-plus.a-spacing-small"));
+                  Console.WriteLine("Error message: " + Message.Text);
                   String Actualresult = Message.Text;
                   String Expectedresult = "Looks like you're new to Amazon";
                   Assert.AreEqual(Actualresult, Expectedresult);
