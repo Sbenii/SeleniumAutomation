@@ -38,5 +38,11 @@ namespace SeleniumAutomation
                   Assert.AreEqual(Actualresult, Expectedresult);
 
             }
+            [TearDown]
+        public void CloseTest()
+        {
+            //close the browser
+            driver.Quit();
+        }
  }   
 }

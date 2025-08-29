@@ -63,6 +63,12 @@ namespace SeleniumAutomation
             Console.WriteLine("Error message: " + Error.Text);
             Assert.That(Error.Text.Contains("There was an error with your registration. Please try registering again."));
         }
+        [TearDown]
+        public void CloseTest()
+        {
+            //close the browser
+            driver.Quit();
+        }
         
 
  }   
