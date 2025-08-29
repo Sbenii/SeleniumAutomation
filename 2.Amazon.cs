@@ -41,7 +41,7 @@ namespace SeleniumAutomation
             [TearDown]
         public void CloseTest()
         {
-            //close the browser
+            //close the chrome browser
             driver.Quit();
         }
  }   
