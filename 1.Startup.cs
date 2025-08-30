@@ -31,7 +31,7 @@ namespace SeleniumAutomation
             IWebElement Searchbox = driver.FindElement(By.Name("q"));
 
             //Type smth in the search bar
-            Searchbox.SendKeys("This is the best automation test startup!!");
+            Searchbox.SendKeys("Text input test!!");
 
             //Get the page title
             Actualresults = driver.Title;
